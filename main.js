@@ -56,9 +56,9 @@ function minceRandom(){
 
 //init
 function init() {
-	//zvol náhodnou minci a umísti na random pozici
+	// náhodná mince a umístěna na random pozici
 	//minceRandom();
-	//panáčka zaparkuj na střed
+	//panáček na střed
 	panacekX = 400-(panacekSirka * 0.5);
 	panacekY = 400-(panacekSirka * 0.5);
 	panacek.style.left = panacekX + 'px';
@@ -83,7 +83,7 @@ function pocitejCas(){
 
 
 
-//přehraj hudbu
+// hudba přehrávání
 function prehraj(elementSelector) {
 	let audioElement = document.querySelector(elementSelector);
 	audioElement.play();

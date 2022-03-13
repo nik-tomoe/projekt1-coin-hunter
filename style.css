@@ -14,8 +14,8 @@ html {
 }
 
 body {
-	margin: 900;
-	padding: 30;
+	margin: 600;
+	padding: 0;
 	height: 100vh;
 	background-color: var(--pozadi);
 	background-repeat: repeat;
