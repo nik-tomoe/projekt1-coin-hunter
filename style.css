@@ -1,6 +1,6 @@
 :root {
 	--pozadi: lightskyblue;
-	--score: red;
+	--score: blue;
 }
 
 html {
@@ -14,12 +14,13 @@ html {
 }
 
 body {
-	margin: 0;
-	padding: 0;
+	margin: 900;
+	padding: 30;
 	height: 100vh;
 	background-color: var(--pozadi);
 	background-repeat: repeat;
-	background-image: url('obrazky/pozadi/geometry.png');
+	background-image: url('obrazky/pozadi/weather.png');
+	
 
 	/*  vyzkoušej i jiná pozadí :)
 	background-image: url('obrazky/pozadi/round.png');
@@ -30,6 +31,19 @@ body {
 	background-image: url('obrazky/pozadi/hypnotize.png');
 	*/
 }
+
+
+
+#casovac {
+	position: absolute;
+	top: 150px;
+	left: 50px;
+	font-family: 'Press Start 2P', sans-serif;
+	font-size: 40px;
+	z-index: 999;
+	color: var(--score);
+}
+
 
 #score {
 	position: absolute;
@@ -49,3 +63,58 @@ body {
 #panacek {
 	z-index: 1;
 }
+#zpatky {
+	position: absolute;
+	top:820px;
+	left:380px;
+	display: none;
+}
+#startbutton {
+	position: absolute;
+	top: 360px;
+	left: 550px;
+	font-family: 'Press Start 2P', sans-serif;
+	font-size: 30px;
+	padding: 5px;
+	z-index: 999;
+	color: var(--score);
+	background-image: linear-gradient(131deg, #5866dd 10%, #d166df 100%);
+}
+
+#startbutton:hover {
+	background-image: linear-gradient(131deg, #5866dd 10%, #d166df 100%);
+	background-image: linear-gradient(131deg, rgb(50, 50, 162) 30%, #d364d6 100%);
+}
+
+
+
+#vitezhlaska {
+	position: absolute;
+	top: 50px;
+	left: 200px;
+	font-family: 'Press Start 2P', sans-serif;
+	font-size: 25px;
+	z-index: 999;
+	color: var(--score);
+}
+h5 {
+	font-size: 30px;
+}
+
+#mince {
+	top:120px;
+	left:620px;
+	border-radius: 50%;
+	box-shadow: 3px 3px 10px rgba(160, 149, 155, 0.5);;
+}
+
+a {
+	color:#751f5b
+}
+#qr {
+	position: absolute;
+	top:250px;
+	left:250px;
+	display: none;
+}
+
